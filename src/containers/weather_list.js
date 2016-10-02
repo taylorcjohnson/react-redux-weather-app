@@ -11,10 +11,10 @@ class WeatherList extends Component {
 
     return (
       <tr key={name}>
-        <td>{name}</td>
-        <td><Chart data={temps} color="orange" units="K" /></td>
-        <td><Chart data={pressures} color="green" units="hPa"/></td>
-        <td><Chart data={humidities} color="blue" units="%"/></td>
+        <td className="col-md-3">{name}</td>
+        <td className="col-md-3"><Chart data={temps} color="orange" units="K" /></td>
+        <td className="col-md-3"><Chart data={pressures} color="green" units="hPa"/></td>
+        <td className="col-md-3"><Chart data={humidities} color="blue" units="%"/></td>
       </tr>
     )
   }
@@ -24,10 +24,10 @@ class WeatherList extends Component {
       <table className="table table-hover">
         <thead>
           <tr>
-            <th>City</th>
-            <th>Temperature (K)</th>
-            <th>Pressure (hPa)</th>
-            <th>Humidity (%)</th>
+            <th className="col-md-3">City</th>
+            <th className="col-md-3">Temperature (K)</th>
+            <th className="col-md-3">Pressure (hPa)</th>
+            <th className="col-md-3">Humidity (%)</th>
           </tr>
         </thead>
         <tbody>
